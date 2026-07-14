@@ -4,6 +4,7 @@ body{
     background-repeat: repeat;
     background-position: center;
     background-attachment: fixed;
+    background-size: 160px auto;
     font-family:"Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN", "Hiragino Sans", "Yu Gothic", sans-serif;
     color: #4a3c31;
     line-height: 1.8;
@@ -14,6 +15,7 @@ body{
 
 header{
     padding-top: 25px;
+    text-align: center;
 }
 
 header img{
@@ -43,7 +45,8 @@ ol{
 }
 
 ul{
-    list-style-image: url("../image/icon.png");
+    list-style-type: disc;
+    list-style-position: inside;
 }
 
 a:link{
@@ -106,6 +109,7 @@ section{
     margin: 35px 0;
     background-color: #ffffff;
     box-shadow: 0 6px 15px rgba(194, 107, 0, 0.06);
+    display: flow-root;
 }
 
 .highlight{
@@ -121,27 +125,28 @@ section{
     display: inline-block;
 }
 
-.nav{
+.nav {
     margin: 20px 0 30px 0;
     padding: 0;
     text-align: center;
+    list-style: none !important;
 }
 
-.nav li{
-    display: inline-block;
-    margin: 6px 8px;
+.nav li {
+    display: inline-block !important; 
+    list-style-type: none !important; 
     background-color: #ffe7c7;
     border-radius: 25px;
-    box-shadow: 0 2px 5px rgba(0,0, 0, 0.04);
+    box-shadow: 0 2px 5px rgba(0,0,0,0.04);
     transition: transform 0.2s ease, background-color 0.2s ease;
 }
 
-.nav li:hover{
+.nav li:hover {
     background-color: #ffdcb0;
     transform: translateY(-2px);
 }
 
-.nav li a{
+.nav li a {
     display: block;
     padding: 10px 22px;
     color: #c26b00;
@@ -149,7 +154,7 @@ section{
     text-decoration: none;
 }
 
-.nav li a :hover{
+.nav li a:hover {
     color: #b05e00;
     text-decoration: none;
 }
@@ -209,7 +214,7 @@ section{
 }
 
 .toc ul {
-    list-style-type: none;
+    list-style: none;
     padding-left: 10px;
     margin: 0;
 }
@@ -266,6 +271,7 @@ section{
 .back {
     text-align: right;
     margin-top: 25px;
+    clear: both;
 }
 
 .back a {
